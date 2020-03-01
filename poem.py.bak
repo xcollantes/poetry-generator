@@ -1,5 +1,3 @@
-from __future__ import absolute_import
-from __future__ import print_function
 import datetime
 import os
 import random
@@ -230,7 +228,7 @@ if __name__ == '__main__':
     if 'mushy' in sys.argv[1:]:
         poemtype = 'mushypoem'
     p,seed_str=generate_poem(poemtype)
-    print(("*"*30 + "\n"*5))
+    print("*"*30 + "\n"*5)
     filtered = []
     for line in re.sub("<.*?>", " ", p).split("\n"):
         if len(line.strip()) > 0:
